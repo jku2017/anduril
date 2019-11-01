@@ -20,3 +20,15 @@
 
 // can't reset the normal way because power is connected before the button
 #define USE_SOFT_FACTORY_RESET
+
+// the button lights up
+#define USE_INDICATOR_LED
+// the aux LEDs are behind the main LEDs
+#ifdef USE_INDICATOR_LED_WHILE_RAMPING
+#undef USE_INDICATOR_LED_WHILE_RAMPING
+#endif
+// enable blinking indicator LED while off
+#define TICK_DURING_STANDBY
+#define STANDBY_TICK_SPEED 3  // every 0.128 s
+#define USE_FANCIER_BLINKING_INDICATOR
+#define INDICATOR_LED_DEFAULT_MODE ((3<<2) + 2)
