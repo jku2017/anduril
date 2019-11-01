@@ -80,7 +80,7 @@
 #define USE_BEACON_MODE
 
 //Muggle mode for easy UI
-#define USE_MUGGLE_MODE
+//#define USE_MUGGLE_MODE
 
 // make the ramps configurable by the user
 #define USE_RAMP_CONFIG
